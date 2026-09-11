@@ -16,21 +16,20 @@ Cell -> Acting entity inside Realities
 
 -> Cell State(all Values are stored as a float | they cannot be smaller then 0 | the have no upper bound | 
                 When a Value gets increased the final Value will be TanH(Value + Increase) * (1/Tanh(1))):
---> Ignorance (Opposite of Knowledge| get decreased by seeing the edge)
---> Saneness (gets increased by time, Rest and entertainment a little | gets decreased by Ignorance decrease)
---> Rest (Sleep | gets increased by Resting places| gets decreased by time and job)
+--> Knowledge (Opposite of Knowledge| get decreased by seeing the edge) 
+--> Insanity (gets increased by time, Rest and entertainment a little | gets decreased by Ignorance decrease)
+--> Wakefulness (Sleep | gets increased by Resting places| gets decreased by time and job)
 --> Money (To buy food or entertainment, Gets increased by job)
 --> Satiety (Opposite of Hunger | gets increased by food | gets decreased by time)
 --> Vitality (Opposite of Burnout | gets decreased by little Rest | gets increased by sleep and entertainment)
 
 -> Actions:
 --> Suicide
---> Kill (Kills a Cell with an saneness level closest to 1 - this cells saneness level) <- The Idea is one often kills becasue the victim is either insane or one itself is insane
+--> Kill (Kills a Cell with an Insanity level closest to 1 - this cells Insanity level) <- The Idea is one often kills becasue the victim is either insane or one itself is insane
 --> Work
 --> Sleep
 --> Entertain
 --> Eat
---> Teach (Teaches cells (in vision) knowledge about the sim | decreases your Saneness by an (1/8) of your knowledge | increases observing cells knowledge by ((1/100) | increases with bad state | decreases when distanced ) of your knowledge)
---> Distract (Prevents all cells in Vision from execuitng their current and following Action | additionally has the effects of Teaching)
---> Distance (from a person)
+--> Distract (Prevents all cells in Vision from execuitng their current Action | Increases the other cells Knowledge by 1/200 of yours | Increases you insanity by double your Knowledge)
+
 
