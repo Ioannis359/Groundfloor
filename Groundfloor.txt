@@ -1,0 +1,35 @@
+Groundfloor: cellular automata * The 13th floor
+
+Rules:
+-> Realities are 2d spaces nodes can exist in.
+-> Nodes have a insanity, knowledge, position, memory, common task Value
+--> Memory:
+---> Nodes can take actions. For example they can kill another node.
+---> The all actions done by a node are recorded and affect chnaces of futures actions and their insanity and knowledge value.
+--> Common task:
+---> Basically a job.
+---> Affects the holders knowledge if its a computer sience job that has acces to other simulations(Enum).
+--> Position:
+---> Realities are not infinite. The more one is closer to the edge of its Reality the more knowledge it gets(2 Vars, ranging from -1.0 to 1.0)
+--> Knowledge:
+---> How mush one knows about its simulated Reality(Ranges from 0.0 to 1.0).
+---> Can only increase.
+---> The higher the knowledge is the higher is the minimum insanity.
+--> Insanity:
+---> The faster knowledge rises the more insane one becomes(Ranges from 0.0 to 1.0).
+---> Decreases very slowly.
+
+-> Nodes take actions based on those Values.
+--> Actions:
+---> Killing:
+----> Only in high insanity score.
+----> The more often someone killed the more lower the minimum required insanity is to kill
+----> Kills nodes with high knowledge
+---> working:
+----> If the job is comp. researcher then knowledge increases, else nothing happens
+---> psycho. break down:
+----> Happens when knowledge and insanity increase to rapidly.
+---> switching realities:
+----> can only be done by comp researchers.
+---> ... 
+

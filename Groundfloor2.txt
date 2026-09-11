@@ -1,0 +1,36 @@
+Realities -> 2d spaces
+Cell -> Acting entity inside Realities
+
+-> Simulate a simplified version of life and see how Cells react to new Realities(The 13th floor)
+-> Cells are a feedback loop:
+--> Its state get fed into a neural net
+--> A neural net/markov chain/state mashine produces an action
+--> That action get executed and changes its state
+--> That neural net is basically its personality
+--> To be able to observe its enviroment a half circle on the front will act as eyes.
+
+-> Realities should be a simplified version of cities
+--> There are Jobs, Resting Places, Eating Places and Entertainment Places
+--> All those things are in seperate places distanced from each other
+--> At the edge of all Realities the Simulation is visible but everyone avoids it (becasue i will progremm them that way)
+
+-> Cell State(all Values are stored as a float | they cannot be smaller then 0 | the have no upper bound | 
+                When a Value gets increased the final Value will be TanH(Value + Increase) * (1/Tanh(1))):
+--> Ignorance (Opposite of Knowledge| get decreased by seeing the edge)
+--> Saneness (gets increased by time, Rest and entertainment a little | gets decreased by Ignorance decrease)
+--> Rest (Sleep | gets increased by Resting places| gets decreased by time and job)
+--> Money (To buy food or entertainment, Gets increased by job)
+--> Satiety (Opposite of Hunger | gets increased by food | gets decreased by time)
+--> Vitality (Opposite of Burnout | gets decreased by little Rest | gets increased by sleep and entertainment)
+
+-> Actions:
+--> Suicide
+--> Kill (Kills a Cell with an saneness level closest to 1 - this cells saneness level) <- The Idea is one often kills becasue the victim is either insane or one itself is insane
+--> Work
+--> Sleep
+--> Entertain
+--> Eat
+--> Teach (Teaches cells (in vision) knowledge about the sim | decreases your Saneness by an (1/8) of your knowledge | increases observing cells knowledge by ((1/100) | increases with bad state | decreases when distanced ) of your knowledge)
+--> Distract (Prevents all cells in Vision from execuitng their current and following Action | additionally has the effects of Teaching)
+--> Distance (from a person)
+
